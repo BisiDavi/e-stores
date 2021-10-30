@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Shop",
+        "link": "#shop"
+    },
+    {
+        "name": "Account",
+        "link": "#Account"
+    },
+    {
+        "name": "Categories",
+        "subCategories": [
+            {
+                "name": "Clothing",
+                "links": [
+                    { "link": "#women-clothing", "name": "Women clothing" },
+                    { "link": "#men-clothing", "name": "Men clothing" },
+                    { "link": "#kids-clothing", "name": "kids clothing" }
+                ],
+                "image": "/clothing.jpg"
+            },
+            {
+                "name": "Shoes",
+                "links": [
+                    { "link": "#women-shoes", "name": "Women shoes" },
+                    { "link": "#men-shoes", "name": "Men shoes" },
+                    { "link": "#kids-shoes", "name": "kids shoes" }
+                ],
+                "image": "/shoes.jpg"
+            },
+            {
+                "name": "Gadgets",
+                "links": [
+                    {
+                        "link": "#smartphones-tablets",
+                        "name": "Smartphones & Tablets"
+                    },
+                    { "link": "#wearable-gadgets", "name": "Wearable gadgets" },
+                    { "link": "#ebook-readers", "name": "E-book-readers" }
+                ],
+                "image": "/gadgets.jpg"
+            },
+            {
+                "name": "Funiture & Decor",
+                "links": [
+                    {
+                        "link": "#home-furniture",
+                        "name": "Home furniture"
+                    },
+                    { "link": "#office-furniture", "name": "Office furniture" },
+                    {
+                        "link": "#lighting-and-decoration",
+                        "name": "Lighting-and-decoration"
+                    }
+                ],
+                "image": "/decor.jpg"
+            },
+            {
+                "name": "Accessories",
+                "links": [
+                    {
+                        "link": "#hats",
+                        "name": "Hats"
+                    },
+                    { "link": "#sunglasses", "name": "Sunglasses" },
+                    {
+                        "link": "#bags",
+                        "name": "Bags"
+                    }
+                ],
+                "image": "/accessories.jpg"
+            },
+            {
+                "name": "Entertainment",
+                "links": [
+                    {
+                        "link": "#kids-toys",
+                        "name": "Kid's toys"
+                    },
+                    { "link": "#video-games", "name": "Video games" },
+                    {
+                        "link": "#outdoor-camping",
+                        "name": "Outdoor / Camping"
+                    }
+                ],
+                "image": "/entertainment.jpg"
+            }
+        ]
+    }
+]
