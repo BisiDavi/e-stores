@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 interface AppLayoutProps {
-    children: JSX.Element;
+    children: any;
     title: string;
 }
 

@@ -1,13 +1,5 @@
 [
     {
-        "name": "Shop",
-        "link": "#shop"
-    },
-    {
-        "name": "Account",
-        "link": "#Account"
-    },
-    {
         "name": "Categories",
         "subCategories": [
             {
@@ -86,5 +78,13 @@
                 "image": "/entertainment.jpg"
             }
         ]
+    },
+    {
+        "name": "Shop",
+        "link": "#shop"
+    },
+    {
+        "name": "Account",
+        "link": "#Account"
     }
 ]

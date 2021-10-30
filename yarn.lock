@@ -2108,6 +2108,13 @@ dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.10.tgz#caa6d08f60388d0bb4539dd75fe458a9a1d0014c"
   integrity sha512-Xu9mD0UjrJisTmv7lmVSDMagQcU9R5hwAbxsaAE/35XPnPLJobbuREfV/rraiSaEj/UOvgrzQs66zyTWTlyd+g==
 
+dom7@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.1.tgz#821209df1bfdf97dd82b5156e50f7cb66b3f166c"
+  integrity sha512-y/RWjw3gK3qQnZz6IqDaIoqH6+xBhcB3Wsh5HFwl0abwuO/NAgbSB31ZbxtBDcuDe8jAX5NYUNDLTx4Ul48sIw==
+  dependencies:
+    ssr-window "^4.0.0"
+
 domain-browser@4.19.0:
   version "4.19.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-4.19.0.tgz#1093e17c0a17dbd521182fe90d49ac1370054af1"
@@ -5196,6 +5203,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+ssr-window@^4.0.0, ssr-window@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.1.tgz#514bf2ca81952f63fe88e8b0c623a23f90f7feb3"
+  integrity sha512-5q936lkCk5Lg5hM6tG8Nutdym4vNiuFSWorslTzOn71PWb3Wnx44q/k2Ryn1LWA1G4FtxMzjywUFOiOxPkVGrA==
+
 stack-utils@^2.0.3:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-2.0.5.tgz#d25265fca995154659dbbfba3b49254778d2fdd5"
@@ -5397,6 +5409,14 @@ swell-js@^3.11.1:
     lodash "4.17.21"
     object-keys-normalizer "1.0.1"
     qs "6.7.0"
+
+swiper@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.2.0.tgz#aae2bb7632798467abd5c1ab3e2441598a70dbd7"
+  integrity sha512-CUL6Nvzcf3fU0b8dHaraYphgBT7l44PY1B6T8b+E12pim4DEcwFZDy/KZoIKrAnn+rfbayCmcksYmSDIP5nDHg==
+  dependencies:
+    dom7 "^4.0.1"
+    ssr-window "^4.0.1"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
