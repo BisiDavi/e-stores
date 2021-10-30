@@ -1,7 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay, A11y } from "swiper";
+import {
+    Navigation,
+    Pagination,
+    EffectFade,
+    Autoplay,
+    Mousewheel,
+    Keyboard,
+} from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/keyboard";
+import "swiper/css/mousewheel";
 
 const sliderArray = [
     {
@@ -32,7 +43,20 @@ export default function Slider() {
         <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            modules={[Autoplay]}
+            modules={[
+                Autoplay,
+                Navigation,
+                Pagination,
+                Mousewheel,
+                Keyboard,
+                EffectFade,
+            ]}
+            autoplay={true}
+            effect="fade"
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
         >
@@ -42,7 +66,17 @@ export default function Slider() {
                         style={{ backgroundColor: `${slider.bg}` }}
                         className="slider-container w-full flex items-center justify-end"
                     >
-                        <img src={`${slider.img}.webp`} />
+                        <div className="slider-text text-white flex flex-col">
+                            <h3 className="text-3xl">{slider.text}</h3>
+                            <h1 className="text-5xl leading-relaxed">
+                                {slider.title}
+                            </h1>
+                            <p className="text-xl">{slider.description}</p>
+                            <button className="bg-red-400 hover:bg-red-600 bordered rounded w-40 h-12 my-6 text-xl">
+                                Shop Now
+                            </button>
+                        </div>
+                        <img src={`${slider.img}.webp`} alt={slider.title} />
                     </div>
                 </SwiperSlide>
             ))}
