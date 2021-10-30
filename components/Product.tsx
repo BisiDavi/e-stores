@@ -17,8 +17,8 @@ export default function Product({ product }: ProductProps) {
             </span>
             <img src={product.img} alt={product.name} />
             <div className="product-details flex flex-col">
-                <h6 className="text-gray-500 text-lg">{product.category}</h6>
-                <h3 className="text-gray-900 text-3xl text-loose">
+                <h6 className="text-gray-500 text-md">{product.category}</h6>
+                <h3 className="text-gray-900 text-lg text-loose">
                     {product.name}
                 </h3>
                 <span className="flex justify-between items-center">

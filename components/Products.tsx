@@ -4,13 +4,17 @@ import Product from "./Product";
 
 export default function Products() {
     return (
-        <section className="products container bg-white relative">
+        <section className="trending-product container bg-white relative m-auto">
             <Categories />
-            <h3 className="text-center">Trending products</h3>
-            <div className="products-group flex">
-                {productArray.map((product) => (
-                    <Product product={product} key={product.name} />
-                ))}
+            <div className="content">
+                <h3 className="text-center font-semibold text-3xl mb-20">
+                    Trending products
+                </h3>
+                <div className="products-group grid grid-cols-4">
+                    {productArray.map((product) => (
+                        <Product product={product} key={product.name} />
+                    ))}
+                </div>
             </div>
         </section>
     );

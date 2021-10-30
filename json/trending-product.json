@@ -1,13 +1,13 @@
 [
     {
-        "img": "",
+        "img": "/product-shoes.webp",
         "category": "Sneakers & Keds",
         "name": "Women Colorblock Sneakers",
         "price": 154,
         "sizeOption": ["S", "M", "L", "XL"]
     },
     {
-        "img": "",
+        "img": "/product-sweater.webp",
         "category": "Women T-shirt",
         "name": "Cotton Lace Blouse",
         "price": 28.5,
@@ -15,7 +15,7 @@
         "colorOption": ["green", "red", "yellow", "purple"]
     },
     {
-        "img": "",
+        "img": "/product-short.webp",
         "category": "Women Shorts",
         "name": "Mom High Waist Shorts",
         "price": 39.5,
@@ -23,14 +23,14 @@
         "colorOption": ["green", "red", "yellow", "purple"]
     },
     {
-        "img": "",
+        "img": "/product-pant.webp",
         "category": "Women Swimwear",
         "name": "Two-Piece Bikini in Print",
         "price": 18,
         "sizeOption": ["XS", "M", "L", "XL"]
     },
     {
-        "img": "",
+        "img": "/product-pink-hoodie.webp",
         "category": "Sportswear",
         "name": "Women Sports Jacket",
         "price": 68,
@@ -38,7 +38,7 @@
         "sizeOption": ["XS", "S", "M", "L"]
     },
     {
-        "img": "",
+        "img": "/product-sunglass.webp",
         "category": "Men's Sunglasses",
         "name": "Polarized Sunglasses",
         "notAvailable": true,
@@ -46,7 +46,7 @@
         "colorOption": ["green", "red", "yellow", "purple"]
     },
     {
-        "img": "",
+        "img": "/product-bag.webp",
         "category": "Backpacks",
         "name": "TH Jeans City Backpack",
         "price": 70,
@@ -54,7 +54,7 @@
         "colorOption": ["green", "red", "yellow", "purple"]
     },
     {
-        "img": "",
+        "img": "/product-white-shoe.webp",
         "category": "Women Sneakers",
         "name": "Leather High-Top Sneakers",
         "price": 150,

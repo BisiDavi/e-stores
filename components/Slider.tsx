@@ -58,8 +58,6 @@ export default function Slider() {
             pagination={true}
             mousewheel={true}
             keyboard={true}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
         >
             {sliderArray.map((slider) => (
                 <SwiperSlide key={slider.img}>
