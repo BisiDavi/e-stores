@@ -9,7 +9,7 @@
                     { "link": "#men-clothing", "name": "Men clothing" },
                     { "link": "#kids-clothing", "name": "kids clothing" }
                 ],
-                "image": "/clothing.jpg"
+                "image": "/clothing.webp"
             },
             {
                 "name": "Shoes",
@@ -18,7 +18,7 @@
                     { "link": "#men-shoes", "name": "Men shoes" },
                     { "link": "#kids-shoes", "name": "kids shoes" }
                 ],
-                "image": "/shoes.jpg"
+                "image": "/shoes.webp"
             },
             {
                 "name": "Gadgets",
@@ -30,7 +30,7 @@
                     { "link": "#wearable-gadgets", "name": "Wearable gadgets" },
                     { "link": "#ebook-readers", "name": "E-book-readers" }
                 ],
-                "image": "/gadgets.jpg"
+                "image": "/gadgets.webp"
             },
             {
                 "name": "Funiture & Decor",
@@ -45,7 +45,7 @@
                         "name": "Lighting-and-decoration"
                     }
                 ],
-                "image": "/decor.jpg"
+                "image": "/decor.webp"
             },
             {
                 "name": "Accessories",
@@ -60,7 +60,7 @@
                         "name": "Bags"
                     }
                 ],
-                "image": "/accessories.jpg"
+                "image": "/accessories.webp"
             },
             {
                 "name": "Entertainment",
@@ -75,7 +75,7 @@
                         "name": "Outdoor / Camping"
                     }
                 ],
-                "image": "/entertainment.jpg"
+                "image": "/entertainment.webp"
             }
         ]
     },

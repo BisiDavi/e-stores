@@ -11,7 +11,7 @@ export default function Nav() {
                         height="35px"
                         width="150px"
                         alt="logo"
-                        src="/logo-dark.png"
+                        src="/logo-dark.webp"
                         layout="fixed"
                     />
                     <input
