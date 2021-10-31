@@ -3,6 +3,7 @@ import Products from "@/components/Products";
 import AppLayout from "@/Layout/AppLayout";
 import AdBanner from "@/components/AdBanner";
 import Brands from "@/components/Brands";
+import BottomLinks from "@/components/BottomLinks";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <Products />
             <AdBanner />
             <Brands />
+            <BottomLinks />
         </AppLayout>
     );
 }

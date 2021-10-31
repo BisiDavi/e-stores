@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function AdBanner() {
     return (
-        <div className="banner grid grid-cols-3 container m-auto gap-12 my-4 px-20">
+        <section className="banner grid grid-cols-3 container m-auto gap-12 my-4 px-20">
             <div className="adbanner-1 flex rounded-lg border border-transparent col-start-1 col-end-3 w-full bg-gray-50">
                 <div className="text flex flex-col p-12 w-full">
                     <h6 className="text-gray-400 my-2 font-light">
@@ -35,6 +35,6 @@ export default function AdBanner() {
                 </p>
                 <Button className="lg:w-32 lg:text-sm" text="Contact us" />
             </div>
-        </div>
+        </section>
     );
 }

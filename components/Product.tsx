@@ -12,7 +12,7 @@ interface ProductProps {
 }
 export default function Product({ product }: ProductProps) {
     return (
-        <div className="product flex flex-col m-4 p-8 relative hover:shadow-lg">
+        <section className="product flex flex-col m-4 p-8 relative hover:shadow-lg">
             <span className="bg-gray-300 rounded-full p-4 h-10 w-10 flex justify-center items-center absolute right-6 top-6">
                 <i className="far fa-heart mx-4 hover:text-red-500"></i>
             </span>
@@ -39,7 +39,6 @@ export default function Product({ product }: ProductProps) {
                     )}
                 </span>
             </div>
-
-        </div>
+        </section>
     );
 }
