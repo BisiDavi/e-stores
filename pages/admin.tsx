@@ -1,7 +1,6 @@
-import Image from "next/image";
-
 import AdminBanner from "@/components/AdminBanner";
 import AppLayout from "@/Layout/AppLayout";
+import Dashboard from "@/components/Dashboard";
 
 export function getServerSideProps({ query }: any) {
     console.log("queryquery", query);
@@ -46,6 +45,7 @@ export default function Admin({
     return (
         <AppLayout title="Admin">
             <AdminBanner />
+            <Dashboard />
         </AppLayout>
     );
 }
