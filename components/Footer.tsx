@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import footerContent from "@/json/footer.json";
 
 type footerContentItems = {
@@ -117,6 +119,54 @@ export default function Footer() {
                         ))}
                     </div>
                     <hr className="w-full my-8 opacity-20" />
+                    <div className="footer-logo flex items-center justify-between">
+                        <div className="footer-logo flex flex-col">
+                            <div className="ml-2 mb-2">
+                                <Image
+                                    src="/footer-logo-light.webp"
+                                    height="40px"
+                                    width="120px"
+                                    alt="logo"
+                                    layout="fixed"
+                                />
+                            </div>
+                            <div className="footer-links text-white mb-12 mt-4">
+                                {footerContent.section2.footerLinks.map(
+                                    (footerLink) => (
+                                        <Link
+                                            key={footerLink.name}
+                                            href={footerLink.link}
+                                        >
+                                            <a className="m-2 hover:text-gray-100 text-gray-400">
+                                                {footerLink.name}
+                                            </a>
+                                        </Link>
+                                    ),
+                                )}
+                            </div>
+                            <p className="text-gray-300 text-sm ml-2">
+                                &copy; All rights reserved. Made by Sailfish
+                                Studio.
+                            </p>
+                        </div>
+                        <div className="footer-icons">
+                            <div className="social-icons flex">
+                                {footerContent.section2.socialIcons.map(
+                                    (socialIcon) => (
+                                        <a
+                                            key={socialIcon}
+                                            className="m-2 flex justify-center hover:bg-red-400 bg-gray-900 items-center h-8 w-8 rounded-lg"
+                                            href="#"
+                                        >
+                                            <i
+                                                className={`${socialIcon} text-white rounded border-tranparent`}
+                                            ></i>
+                                        </a>
+                                    ),
+                                )}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
