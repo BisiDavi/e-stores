@@ -14,5 +14,19 @@ const brands = [
 ];
 
 export default function Brands() {
-    return <div className="grid grid-cols-4"></div>;
+    return (
+        <div className="brands container m-auto my-6 mb-12">
+                <h4 className='text-center text-4xl my-8 font-medium'>Shop by Brands</h4>
+            <div className="grid grid-cols-4 gap-10">
+                {brands.map((brand) => (
+                    <div
+                        key={brand}
+                        className="brand p-20 h-24 flex justify-center items-center shadow-lg"
+                    >
+                        <img src={brand} alt={brand} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }
