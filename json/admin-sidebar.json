@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Account",
+        "content": [
+            { "icon": "", "name": "Settings", "id": "settings" },
+            { "icon": "", "name": "Purchases", "id": "purchases" },
+            {
+                "icon": "",
+                "name": "Favourites",
+                "id": "favourites",
+                "details": 4
+            }
+        ]
+    },
+    {
+        "name": "Seller Dashboard",
+        "content": [
+            {
+                "icon": "",
+                "name": "Sales",
+                "id": "sales",
+                "details": "$1,375.00"
+            },
+            { "icon": "", "name": "Products", "id": "products", "details": 5 },
+            {
+                "icon": "",
+                "name": "Add New Product",
+                "id": "addNewProduct"
+            },
+            {
+                "icon": "",
+                "name": "Payouts",
+                "id": "payouts"
+            },
+            {
+                "icon": "",
+                "name": "Sign out",
+                "id": "signout"
+            }
+        ]
+    },
+    {
+        "name": "Site UI Settings",
+        "content": [
+            {
+                "icon": "",
+                "name": "Slider",
+                "id": "sales",
+                "details": "$1,375.00"
+            }
+        ]
+    }
+]

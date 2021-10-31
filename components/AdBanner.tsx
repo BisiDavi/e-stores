@@ -14,13 +14,13 @@ export default function AdBanner() {
                     </h2>
                     <Button className="lg:w-32 lg:text-sm" text="Shop Now" />
                 </div>
-                <img
+                <Image
                     src="/banner-1.webp"
-                    //height="300px"
-                    //width="600px"
+                    height="300px"
+                    width="600px"
                     alt="ad-banner"
                     className="border rounded-lg border-transparent"
-                    //layout="fixed"
+                    layout="fixed"
                 />
             </div>
             <div

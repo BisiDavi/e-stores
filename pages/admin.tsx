@@ -4,6 +4,7 @@ import AdminBanner from "@/components/AdminBanner";
 import AppLayout from "@/Layout/AppLayout";
 
 export function getServerSideProps({ query }: any) {
+    console.log("queryquery", query);
     return { props: query };
 }
 
@@ -41,6 +42,7 @@ export default function Admin({
     );
     name = decodeURIComponent(name);
     city = decodeURIComponent(city);
+    console.log("decodeName", name, "decodeCity", city);
     return (
         <AppLayout title="Admin">
             <AdminBanner />
