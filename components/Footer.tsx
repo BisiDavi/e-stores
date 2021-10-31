@@ -125,7 +125,7 @@ export default function Footer() {
                                 <Image
                                     src="/footer-logo-light.webp"
                                     height="40px"
-                                    width="120px"
+                                    width="150px"
                                     alt="logo"
                                     layout="fixed"
                                 />
@@ -149,8 +149,8 @@ export default function Footer() {
                                 Studio.
                             </p>
                         </div>
-                        <div className="footer-icons">
-                            <div className="social-icons flex">
+                        <div className="footer-icons flex flex-col">
+                            <div className="social-icons flex mb-4">
                                 {footerContent.section2.socialIcons.map(
                                     (socialIcon) => (
                                         <a
@@ -165,6 +165,13 @@ export default function Footer() {
                                     ),
                                 )}
                             </div>
+                            <Image
+                                src="/cards-alt.webp"
+                                alt="payment methods"
+                                height="25px"
+                                width="200px"
+                                layout="responsive"
+                            />
                         </div>
                     </div>
                 </div>
