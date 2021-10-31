@@ -15,7 +15,7 @@ const brands = [
 
 export default function Brands() {
     return (
-        <section className="brands container m-auto my-6 mb-12">
+        <section className="brands container m-auto my-6 mb-24">
                 <h4 className='text-center text-4xl my-8 font-medium'>Shop by Brands</h4>
             <div className="grid grid-cols-4 gap-10">
                 {brands.map((brand) => (

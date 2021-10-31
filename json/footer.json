@@ -1,0 +1,86 @@
+{
+    "section1": [
+        {
+            "name": "Categories",
+            "links": [
+                { "name": "Sneakers & Athletic", "link": "#" },
+                { "name": "Athletic Apparel", "link": "#" },
+                { "name": "Sandals", "link": "#" },
+                { "name": "Jeans", "link": "#" },
+                { "name": "Shirts & Tops", "link": "#" },
+                { "name": "Shorts", "link": "#" },
+                { "name": "T-Shirts", "link": "#" },
+                { "name": "Swimwear", "link": "#" },
+                { "name": "Clogs & Mules", "link": "#" },
+                { "name": "Bags & Wallets", "link": "#" },
+                { "name": "Accessories", "link": "#" },
+                { "name": "Sunglasses & Eyewear", "link": "#" },
+                { "name": "Watches", "link": "#" }
+            ]
+        },
+        {
+            "group": [
+                {
+                    "name": "Account & shipping info",
+                    "links": [
+                        { "name": "Your account", "link": "#" },
+                        { "name": "Shipping rates & policies", "link": "#" },
+                        { "name": "Refunds & replacements", "link": "#" },
+                        { "name": "Order tracking", "link": "#" },
+                        { "name": "Delivery info", "link": "#" },
+                        { "name": "Taxes & fees", "link": "#" }
+                    ]
+                },
+                {
+                    "name": "About us",
+                    "links": [
+                        { "name": "About company", "link": "#" },
+                        { "name": "Our team", "link": "#" },
+                        { "name": "Careers", "link": "#" },
+                        { "name": "News", "link": "#" }
+                    ]
+                }
+            ]
+        }
+    ],
+    "section2": {
+        "points": [
+            {
+                "title": "Fast and Free delivery",
+                "text": "Free delivery for all orders over $200",
+                "icon": "fas fa-rocket"
+            },
+            {
+                "title": "Money back guarantee",
+                "text": "We return money within 30 days",
+                "icon": "fas fa-dollar-sign"
+            },
+            {
+                "title": "24/7 customer support",
+                "text": "Friendly 24/7 customer support",
+                "icon": "fas fa-headset"
+            },
+            {
+                "title": "Secure online payment",
+                "text": "We possess SSL/Secuere certificate",
+                "icon": "far fa-credit-card"
+            }
+        ],
+        "socialIcons": [
+            "fab fa-twitter",
+            "fab fa-facebook",
+            "fab fa-instagram",
+            "fab fa-pinterest",
+            "fab fa-youtube"
+        ],
+        "paymentMethod": "/payment-method.webp",
+        "footerLinks": [
+            { "name": "Outlets", "link": "#" },
+            { "name": "Affiliates", "link": "#" },
+            { "name": "Support", "link": "#" },
+            { "name": "Privacy", "link": "#" },
+            { "name": "Terms of use", "link": "#" },
+            { "name": "Payment methods", "link": "#" }
+        ]
+    }
+}
