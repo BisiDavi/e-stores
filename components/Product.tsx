@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface ProductProps {
     product: {
         name: string;
@@ -11,11 +12,17 @@ interface ProductProps {
 }
 export default function Product({ product }: ProductProps) {
     return (
-        <div className="product flex flex-col m-4 p-8 relative shadow-lg">
+        <div className="product flex flex-col m-4 p-8 relative hover:shadow-lg">
             <span className="bg-gray-300 rounded-full p-4 h-10 w-10 flex justify-center items-center absolute right-6 top-6">
-                <i className="far fa-heart mx-4"></i>
+                <i className="far fa-heart mx-4 hover:text-red-500"></i>
             </span>
-            <img src={product.img} alt={product.name} />
+            <Image
+                src={product.img}
+                alt={product.name}
+                height="250px"
+                width="250px"
+                layout="fixed"
+            />
             <div className="product-details flex flex-col">
                 <h6 className="text-gray-500 text-md">{product.category}</h6>
                 <h3 className="text-gray-900 text-lg text-loose">
@@ -32,6 +39,7 @@ export default function Product({ product }: ProductProps) {
                     )}
                 </span>
             </div>
+
         </div>
     );
 }
