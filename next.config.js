@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-}
+const { withCountryInfo } = require('./lib/parseCountries')
+
+module.exports = withCountryInfo({
+    reactStrictMode: true,
+    images: {
+        domains: ["flagcdn.com"],
+    },
+});
