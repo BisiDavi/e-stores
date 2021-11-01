@@ -3,8 +3,8 @@ import Rating from "@/components/Rating";
 
 export default function AdminBanner() {
     return (
-        <div className="bg-indigo-400">
-            <div className="container m-auto flex justify-between py-12">
+        <div className="bg-indigo-600">
+            <div className="container m-auto flex justify-between h-64 py-8 items-start">
                 <div className="logo flex items-center">
                     <span className="m-2">
                         <Image
