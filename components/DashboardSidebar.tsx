@@ -13,14 +13,19 @@ export default function DashboardSidebar() {
         <div className="w-1/4">
             {adminSidebar.map((sidebar) => (
                 <div key={sidebar.name} className="adminSidebar flex flex-col">
-                    <h3>{sidebar.name}</h3>
+                    <h3 className="bg-gray-200 text-gray-700 p-2 pl-6">
+                        {sidebar.name}
+                    </h3>
                     <div className="sidebarList flex flex-col">
                         {sidebar.content.map((list) => (
                             <div
                                 onClick={() => navigateTabs(list.id)}
                                 key={list.name}
+                                className="p-2 pl-6 border border-bottom border-gray-100"
                             >
-                                <h4>{list.name}</h4>
+                                <h4 className="hover:text-red-500">
+                                    {list.name}
+                                </h4>
                             </div>
                         ))}
                     </div>
