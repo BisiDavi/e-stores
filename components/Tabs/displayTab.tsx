@@ -31,8 +31,5 @@ export default function displayTabs(name: string, router: any) {
         case "payouts": {
             return <PayoutsTab />;
         }
-        case "slider": {
-            return router.push("/edit-ui");
-        }
     }
 }

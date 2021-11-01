@@ -22,6 +22,7 @@ const sliderArray = [
         text: "Has just arrived",
         title: "Huge Summer Collection",
         description: "Swimwear, Tops, Shorts, Sunglasses & much more...",
+        type: "first",
     },
     {
         img: "/slider-2",
@@ -29,6 +30,7 @@ const sliderArray = [
         text: "Hurry up! Limited time offer",
         title: "Women Sportswear Sale",
         description: "Sneakes, Keds, Sweatshirts, Hoodies & much more...",
+        type: "second",
     },
     {
         img: "/slider-3",
@@ -36,10 +38,14 @@ const sliderArray = [
         text: "Complete your look with",
         title: "New Men's Accessories",
         description: "Hats & Caps, Sunglasses, Bags, & much more...",
+        type: "third",
     },
 ];
-
-export default function Slider() {
+interface SliderProps {
+    edit?: boolean;
+}
+export default function Slider({ edit }: SliderProps) {
+    const autoplaySlider = edit ? false : true;
     return (
         <Swiper
             spaceBetween={50}
@@ -52,7 +58,7 @@ export default function Slider() {
                 Keyboard,
                 EffectFade,
             ]}
-            autoplay={true}
+            autoplay={autoplaySlider}
             effect="fade"
             navigation={true}
             pagination={true}
@@ -66,11 +72,18 @@ export default function Slider() {
                         className="slider-container w-full flex items-center justify-end"
                     >
                         <div className="slider-text text-white flex flex-col">
-                            <h3 className="text-3xl">{slider.text}</h3>
+                            <h3 className="text-3xl">
+                                {slider.text}
+                                {edit && <i className="fas fa-pencil-alt ml-4"></i>}
+                            </h3>
                             <h1 className="text-5xl leading-relaxed">
-                                {slider.title}
+                                {slider.title}{" "}
+                                {edit && <i className="fas fa-pencil-alt ml-4"></i>}
                             </h1>
-                            <p className="text-xl">{slider.description}</p>
+                            <p className="text-xl">
+                                {slider.description}
+                                {edit && <i className="fas fa-pencil-alt ml-4"></i>}
+                            </p>
                             <button className="bg-red-400 hover:bg-red-600 bordered rounded w-40 h-12 my-6 text-xl">
                                 Shop Now
                             </button>

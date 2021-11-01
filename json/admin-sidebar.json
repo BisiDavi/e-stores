@@ -46,7 +46,8 @@
                 "icon": "",
                 "name": "Slider",
                 "id": "slider",
-                "details": "$1,375.00"
+                "link": true,
+                "url": "/edit-ui"
             }
         ]
     }

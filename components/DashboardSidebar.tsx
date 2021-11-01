@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useAppSelector } from "@/hooks/useRedux";
+import Link from "next/link";
+
 import { useAppDispatch } from "@/hooks/useRedux";
 import adminSidebar from "@/json/admin-sidebar.json";
 import { updateAdminTab } from "@/redux/admin-tab-slice";
@@ -7,6 +7,14 @@ import { updateAdminTab } from "@/redux/admin-tab-slice";
 interface DashboardSidebarProps {
     activeTab: string;
 }
+
+type linksType = {
+    icon: string;
+    name: string;
+    id: string;
+    link?: boolean;
+    url?: string | any;
+};
 
 export default function DashboardSidebar({ activeTab }: DashboardSidebarProps) {
     const dispatch = useAppDispatch();
@@ -26,21 +34,34 @@ export default function DashboardSidebar({ activeTab }: DashboardSidebarProps) {
                         {sidebar.name}
                     </h3>
                     <div className="sidebarList flex flex-col">
-                        {sidebar.content.map((list) => (
-                            <div
-                                onClick={() => navigateTabs(list.id)}
-                                key={list.name}
-                                className="p-3 pl-6 border border-bottom border-gray-100"
-                            >
-                                <h4
-                                    className={` ${activeTabStyle(
-                                        list.id,
-                                    )} hover:text-red-500`}
+                        {sidebar.content.map((list: linksType) => {
+                            return list.link ? (
+                                <div
+                                    key={list.name}
+                                    className="p-3 pl-6 border border-bottom border-gray-100 cursor-pointer"
                                 >
-                                    {list.name}
-                                </h4>
-                            </div>
-                        ))}
+                                    <Link href={list?.url} passHref>
+                                        <a className="hover:text-red-500">
+                                            {list.name}
+                                        </a>
+                                    </Link>
+                                </div>
+                            ) : (
+                                <div
+                                    onClick={() => navigateTabs(list.id)}
+                                    key={list.name}
+                                    className="p-3 pl-6 border border-bottom border-gray-100 cursor-pointer"
+                                >
+                                    <h4
+                                        className={` ${activeTabStyle(
+                                            list.id,
+                                        )} hover:text-red-500`}
+                                    >
+                                        {list.name}
+                                    </h4>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             ))}

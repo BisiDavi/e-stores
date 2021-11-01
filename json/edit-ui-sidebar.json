@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Slider 1",
+        "id": "slider1",
+        "content": [
+            {
+                "name": "Change Background Color",
+                "id": "changeBackgroundColor",
+                "type": "colorPalette"
+            },
+            {
+                "name": "Change Slider Image",
+                "id": "changeSliderImage",
+                "type": "file"
+            },
+            {
+                "name": "Change Slider Caption",
+                "id": "changeSliderCaption",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Title",
+                "id": "changeSliderTitle",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Description",
+                "id": "changeSliderDescription",
+                "type": "input"
+            }
+        ]
+    },
+    {
+        "name": "Slider 2",
+        "id": "slider2",
+        "content": [
+            {
+                "name": "Change Background Color",
+                "id": "changeBackgroundColor",
+                "type": "colorPalette"
+            },
+            {
+                "name": "Change Slider Image",
+                "id": "changeSliderImage",
+                "type": "file"
+            },
+            {
+                "name": "Change Slider Caption",
+                "id": "changeSliderCaption",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Title",
+                "id": "changeSliderTitle",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Description",
+                "id": "changeSliderDescription",
+                "type": "input"
+            }
+        ]
+    },
+    {
+        "name": "Slider 3",
+        "id": "slider3",
+        "content": [
+            {
+                "name": "Change Background Color",
+                "id": "changeBackgroundColor",
+                "type": "colorPalette"
+            },
+            {
+                "name": "Change Slider Image",
+                "id": "changeSliderImage",
+                "type": "file"
+            },
+            {
+                "name": "Change Slider Caption",
+                "id": "changeSliderCaption",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Title",
+                "id": "changeSliderTitle",
+                "type": "input"
+            },
+            {
+                "name": "Change Slider Description",
+                "id": "changeSliderDescription",
+                "type": "input"
+            }
+        ]
+    }
+]
